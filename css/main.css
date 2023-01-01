@@ -3,6 +3,31 @@
 /*	Basic Style 
 /* =================================== */
 
+img {
+  border: 5px solid #9E2B12;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -41,13 +66,14 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: #6CB670;
+  color: #4D3B30;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
 	font-weight: normal;
 	margin: 0;
+  color: #4D3B30;
 }
 
 .clear:before,
@@ -65,7 +91,7 @@ h4, h5, h6 {
 }
 
 span.color {
-	color: #0feb9e;
+  color: #4D3B30;
 }
 
 body > section,
@@ -76,7 +102,7 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: #4D3B30;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -141,7 +167,7 @@ body > section,
 ==========================================*/
 
 #navigation {
-  background-color: rgba(16, 22, 54, 0.2);
+  color: #4D3B30;
   border: 0 none;
   margin: 0;
   
@@ -185,36 +211,42 @@ body > section,
 
 #slider .carousel-inner .item {
   background-size: cover;
+  color: #4D3B30;
 }
 
 .carousel-caption {
   top: 50%;
+  color: #4D3B30;
 }
 
 .carousel-caption h2 {
   font-size: 62px;
   font-weight: 300;
+  color: #4D3B30;
 }
 
 .carousel-caption h2 span {
   font-weight: 800;
+  color: #4D3B30;
 }
 
 .carousel-caption h3 {
   font-size: 48px;
   font-weight: 300;
   margin: 6px 0 20px;
+  color: #4D3B30;
 }
 
 .carousel-caption p {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
+  color: #4D3B30;
 }
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-color: #0feb9e;
+color: #9E2B12;
 content: "___";
 position: relative;
 top: -8px;
